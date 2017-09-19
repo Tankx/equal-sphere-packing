@@ -10,6 +10,9 @@ The first method was written to emulate the technique used in apple packhouses, 
 SC:
 simple cubic
 
+HCP:
+hexagonal close packing
+
 BCC:
 body centered cubic
 
