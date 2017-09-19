@@ -8,7 +8,7 @@ class espack(object):
         self.z = z  #Height of carton domain
         self.r = r  #fruit radius
         
-    # Used by pack_house to calculate the number of fruit in a box height (for staggered)
+    # Used by stagger to calculate the number of fruit in a box height (for staggered)
     def closest_y_gap(self):
         self.node_number_y_temporary = np.ceil((self.y - (2 * self.r))/(self.r))     #initiallizes the maximum number of node values along y-axis
         for i in np.arange(self.node_number_y_temporary + 1):     #for each the possible nodes across y-axis  
@@ -211,4 +211,4 @@ class espack(object):
         # Fruit density in carton (porosity)
         self.den = 1 - self.por  
         
-       
+        
